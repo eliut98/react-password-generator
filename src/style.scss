@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1971c2;
+  margin: 0;
+}
+
+.container {
+  .header {
+    padding: 0.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #155592;
+  }
+  .form {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    .pwdLength {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+    .pwdChars {
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      input {
+        text-align: center;
+        border: 2px solid #f1f3f5;
+        padding: 0.3rem;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .btn {
+      color: #adb5bd;
+      background-color: #f1f3f5;
+      border: none;
+      font-weight: bold;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+      &:hover {
+        color: #155592;
+        background-color: #a5d8ff;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+    .result-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .password {
+      flex: 80%;
+      input {
+        width: 100%;
+        color: #fff;
+        border: none;
+        padding: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #343a40;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+      .pwdStrength {
+        width: 100%;
+        height: 8px;
+      }
+    }
+
+    .generate {
+      flex: 20%;
+      font-size: 1.5rem;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.fas {
+  pointer-events: none;
+}
